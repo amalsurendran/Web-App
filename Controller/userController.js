@@ -15,7 +15,6 @@ const securePassword = async (password) => {
 }
 
 const userRegister = async (req, res) => {
-    console.log(req.body);
 
     try {
         const spassword = await securePassword(req.body.password);
