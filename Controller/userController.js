@@ -29,6 +29,7 @@ const userRegister = async (req, res) => {
             res.json({ status: 'ok' });
         } else {
             res.json({ status: 'incorrectpassword' });
+            console.log("hello");
         }
     } catch (error) {
         res.json({ status: 'error', error: 'duplicate email' })
