@@ -37,6 +37,7 @@ const userRegister = async (req, res) => {
 }
 const userLogin = async (req, res) => {
     try {
+        console.log(req,res);
         let blocked = true
         const email = req.body.email
         const password = req.body.password
